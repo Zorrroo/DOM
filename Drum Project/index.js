@@ -48,7 +48,10 @@ function switch_statement(event) {
 
 function buttonAnimation(currentkey)
 {
-  var currentkkey = document.querySelector("." + currentkey);
+  var currentkey = document.querySelector("." + currentkey);
   currentkey.classList.add("pressed");
-  
+  setTimeout(function(){
+    currentkey.classList.remove("pressed");
+  },100)
+
 }
